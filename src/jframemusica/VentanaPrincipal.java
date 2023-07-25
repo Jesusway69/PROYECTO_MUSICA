@@ -67,10 +67,14 @@ VentanaPrincipal.CustomPanel fondo = new VentanaPrincipal.CustomPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
+        setPreferredSize(new java.awt.Dimension(1355, 925));
 
+        txaContenido.setBackground(new java.awt.Color(51, 0, 153));
         txaContenido.setColumns(20);
         txaContenido.setFont(new java.awt.Font("Lucida Console", 0, 18)); // NOI18N
+        txaContenido.setForeground(new java.awt.Color(11, 197, 230));
         txaContenido.setRows(5);
+        txaContenido.setPreferredSize(jScrollPane1.getMaximumSize());
         jScrollPane1.setViewportView(txaContenido);
 
         jLabel1.setBackground(new java.awt.Color(102, 102, 102));
@@ -128,7 +132,7 @@ VentanaPrincipal.CustomPanel fondo = new VentanaPrincipal.CustomPanel();
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1355, Short.MAX_VALUE)
             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(113, 113, 113)
@@ -139,7 +143,7 @@ VentanaPrincipal.CustomPanel fondo = new VentanaPrincipal.CustomPanel();
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(buttonEdit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(buttonDelete, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(buttonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addComponent(txtDisco, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
